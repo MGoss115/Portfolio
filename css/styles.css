@@ -282,7 +282,10 @@ HORIZONTAL ALIGNMENT : justify-content: center; */
   display: grid;
   place-items: center;
   transition: var(--transition);
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
+}
+.show-sidebar {
+  transform: translateX(0);
 }
 .sidebar-links {
   text-align: center;
@@ -313,6 +316,20 @@ HORIZONTAL ALIGNMENT : justify-content: center; */
 }
 .social-icon:hover {
   color: var(--clr-primary-5);
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  border: transparent;
+  transition: var(--transition);
+  color: #bb2525;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #e66b6b;
 }
 /*
 =============== 
