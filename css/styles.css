@@ -195,6 +195,10 @@ p {
   margin-left: auto;
   margin-right: auto; */
 }
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
 
 /*
 =============== 
@@ -385,13 +389,6 @@ Hero
   .hero-center {
     grid-template-columns: repeat(2,1fr);
   } 
-  .hero-photo {
-    max-width: 25rem;
-    max-height: 30rem;
-    object-fit: cover;
-    border-radius: var(--radius);
-    position: relative;
-  }
   .hero-img::before {
     content: "";
     position: absolute;
@@ -403,12 +400,30 @@ Hero
     border-radius: var(--radius);
   }
 }
+.hero-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  position: relative;
+}
 /*
 =============== 
 About
 ===============
 */
 /* section title added to globals */
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.about-center {
+  display: grid;  
+  gap: 3rem 2rem;
+}
+.about-img {
+  justify-self: center;
+}
 
 /*
 =============== 
