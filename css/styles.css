@@ -188,12 +188,12 @@ p {
 
 /* added during recording */
 .underline {
-  /* width: 5rem;
+  width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
 }
 .section-title {
   margin-bottom: 4rem;
@@ -389,7 +389,7 @@ Hero
   .hero-center {
     grid-template-columns: repeat(2,1fr);
   } 
-  .hero-img::before {
+  .hero-img::before, .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -424,6 +424,21 @@ About
 .about-img {
   justify-self: center;
 }
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    left: -2rem;
+  }
+  .about-info {
+    align-self: center;
+  }
+
 
 /*
 =============== 
